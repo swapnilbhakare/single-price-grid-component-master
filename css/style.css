@@ -29,7 +29,7 @@ The designs were created to the following widths:
 }
 .wrapper {
   width: 700px;
-  height: 700px;
+  height: 600px;
   border-radius: 8px;
   box-shadow: 0px 0px 35px #ccc;
   grid-template-rows: 45% 55%;
