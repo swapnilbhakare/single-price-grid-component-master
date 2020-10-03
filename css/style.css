@@ -1,0 +1,219 @@
+/*
+# Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+## Colors
+### Primary
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+### Neutral
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+## Typography
+### Body Copy
+- Font size: 16px
+### Font
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  background-color: #e5eff5;
+  padding: 165px 400px 165px 400px;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+.wrapper {
+  width: 700px;
+  height: 700pz;
+  border-radius: 8px;
+  box-shadow: 0px 0px 35px #ccc;
+  grid-template-rows: 45% 55%;
+}
+.main-card {
+  height: 100%;
+  background-color: white;
+  padding-left: 40px;
+  border-radius: 10px 10px 0 0;
+}
+.main-card h1 {
+  padding-top: 40px;
+  color: #2ab2af;
+  padding-bottom: 30px;
+}
+.main-card h3 {
+  color: #c0df34;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.main-card p {
+  width: 540px;
+  color: #8f9aac;
+  line-height: 30px;
+  font-size: 16px;
+  padding-bottom: 40px;
+}
+.lower {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 0, 0, 0, 20px;
+}
+.left {
+  background-color: #2ab2af;
+  padding-left: 35px;
+  border-radius: 0, 0, 0, 10px;
+}
+.left h2 {
+  padding-top: 40px;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.left h1 {
+  padding-top: 15px;
+  color: white;
+  font-size: 30px;
+}
+.left p {
+  color: #80e2e5;
+  padding-left: 60px;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+.left h5 {
+  color: #8cecf0;
+  padding-top: 15px;
+  color: white;
+  font-size: 18px;
+  padding-bottom: 35px;
+  padding-right: 5px;
+}
+.button {
+  height: 50px;
+  width: 235px;
+  border-radius: 5px;
+  background-color: #c0df34;
+  text-align: center;
+  box-shadow: 0px 3px 15px #219f89, 0px 1px 5px #219f89;
+  margin-bottom: 30px;
+  border: none;
+}
+.right {
+  background-color: #4abebd;
+  padding-left: 40px;
+  border-radius: 0, 0, 10px, 0;
+}
+.right h1 {
+  font-size: 18px;
+  color: white;
+  padding-top: 35px;
+}
+.right p {
+  width: 185px;
+  line-height: 25px;
+  padding-top: 20px;
+  color: #a3fbfd;
+}
+@media (max-width: 600px) {
+  .container {
+    background-color: #e5eff5;
+    padding: 20px;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 35px #ccc;
+  }
+  .main-card {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0 0px;
+    padding: 25px;
+  }
+  .main-card h1 {
+    padding-top: 20px;
+    color: #2ab2af;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  .main-card h3 {
+    color: #c0df34;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .main-card p {
+    color: #8f9aac;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: 12px;
+
+    max-width: 250px;
+  }
+  .lower {
+    width: 100%;
+    flex-flow: row wrap;
+    display: flex;
+  }
+  .left {
+    background-color: #2ab2af;
+    width: 100%;
+  }
+  .left h2 {
+    padding-top: 30px;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  .left h1 {
+    padding-top: 10px;
+    color: white;
+    font-size: 30px;
+  }
+  .left p {
+    color: #80e2e5;
+    padding-left: 65px;
+    margin-bottom: 10px;
+  }
+  .left h5 {
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 15px 20px 20px 0;
+  }
+  .button {
+    height: 50px;
+    width: 235px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c0df34;
+    text-align: center;
+    box-shadow: 0px 3px 15px #219f89, 0px 1px 5px #4abebd;
+  }
+
+  .right {
+    background-color: #4abebd;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .right h1 {
+    font-size: 18px;
+    color: white;
+    padding-top: 35px;
+  }
+  .right p {
+    padding-top: 20px;
+    color: #a3fbfd;
+    padding-bottom: 15px;
+
+    text-align: left;
+  }
+}
